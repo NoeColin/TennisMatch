@@ -7,7 +7,7 @@ public class TennisMatchTest {
         Player p1 = new Player("John");
         Player p2 = new Player("Jeanne");
         TennisMatch t = new TennisMatch(p1, p2, MatchType.BEST_OF_FIVE, false);
-        assertEquals(0, );
+        //assertEquals(0, );
     }
 
     @org.junit.Test
