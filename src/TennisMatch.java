@@ -106,7 +106,9 @@ public class TennisMatch {
                 pointTieBreakP1++;
                 if(pointTieBreakP1 >= 7 && pointTieBreakP1 >= pointTieBreakP2 +2){
                     finish = true;
-                    gamePlayer1++;
+                    addGame(player1);
+                    pointPlayer2 = "0";
+                    pointPlayer1 = "0";
                 }
             }
             else {
@@ -133,14 +135,15 @@ public class TennisMatch {
                         addGame(player);
                 }
             }
-
         }
         else if(player.equals(player2)) {
             if (isATieBreak) {
                 pointTieBreakP2++;
                 if (pointTieBreakP2 >= 7 && pointTieBreakP2 >= pointTieBreakP1 + 2) {
                     finish = true;
-                    gamePlayer2++;
+                    addGame(player2);
+                    pointPlayer2 = "0";
+                    pointPlayer1 = "0";
                 }
             } else {
                 switch (pointPlayer2) {
