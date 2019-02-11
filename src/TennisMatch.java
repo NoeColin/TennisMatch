@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class TennisMatch {
 
     Player player1;
@@ -16,6 +18,7 @@ public class TennisMatch {
     boolean isLastSet;
     boolean finish;
     boolean tieBreakInLastSet;
+    int score[][];
 
 
 
@@ -164,11 +167,10 @@ public class TennisMatch {
                 }
             }
         }
-
-
     }
 
     private void addGame(Player player){
+        isATieBreak = false;
         if(player == player1){
             if(gamePlayer1 >= 5 && gamePlayer1 >= gamePlayer2+2){
                 addSet(player);
@@ -178,6 +180,9 @@ public class TennisMatch {
                 pointPlayer1 = "0";
                 pointPlayer2 = "0";
                 gamePlayer1++;
+                if(gamePlayer1 == gamePlayer2 && gamePlayer1 == 6 && ((isTieBreakInLastSet() && isLastSet) || (!isLastSet))){
+                    isATieBreak = true;
+                }
             }
         }
         else{
@@ -200,7 +205,6 @@ public class TennisMatch {
         if(setPlayer1 == matchType.numberOfSetsToWin() -1 && setPlayer1 == setPlayer2){
             isLastSet = true;
         }
-
         if(player == player1){
             if(setPlayer1 +1 == matchType.numberOfSetsToWin()){
                 finish = true;
@@ -222,5 +226,4 @@ public class TennisMatch {
             }
         }
     }
-
 }
