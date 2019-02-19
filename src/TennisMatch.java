@@ -7,7 +7,6 @@ public class TennisMatch {
     MatchType matchType;
     String pointPlayer1;
     String pointPlayer2;
-    int currentSetNumber;
     int gamePlayer1 ;
     int gamePlayer2;
     int setPlayer1;
@@ -18,7 +17,7 @@ public class TennisMatch {
     boolean isLastSet;
     boolean finish;
     boolean tieBreakInLastSet;
-    int score[][];
+    ArrayList<ArrayList> score;
 
 
 
@@ -58,21 +57,14 @@ public class TennisMatch {
         gamePlayer2 = 0;
         setPlayer1 = 0;
         setPlayer2 = 0;
-        currentSetNumber = 0;
         isATieBreak = false;
         isLastSet = false;
         finish = false;
         pointTieBreakP1 = 0;
         pointTieBreakP2 = 0;
+
     }
 
-    public void updateWithPointWonBy(Player player) {
-        if (player == player1) {
-            pointPlayer1 = "";
-        } else if (player == player2) {
-
-        }
-    }
 
     public String pointsForPlayer(Player player) {
         if (player == player1) {
@@ -85,11 +77,16 @@ public class TennisMatch {
     }
 
     public int currentSetNumber() {
-        return currentSetNumber;
+        return (setPlayer1+setPlayer2);
     }
 
     public int gamesInCurrentSetForPlayer(Player player) {
-        return 1;
+        if(player == this.player1){
+            return gamePlayer1;
+        }
+        else {
+            return gamePlayer2;
+        }
     }
 
     public int gamesInSetForPlayer(int setNumber, Player player) {
@@ -97,10 +94,10 @@ public class TennisMatch {
     }
 
     public boolean isFinished() {
-        return true;
+        return finish;
     }
 
-    private void addPoint(Player player){
+    public void updateWithPointWonBy(Player player){
         if(player.equals(player1)){
             if(isATieBreak){
                 pointTieBreakP1++;
@@ -177,8 +174,9 @@ public class TennisMatch {
         if(player == player1){
             if(gamePlayer1 >= 5 && gamePlayer1 >= gamePlayer2+2){
                 addSet(player);
+                pointPlayer1 = "0";
+                pointPlayer2 = "0";
             }
-
             else {
                 pointPlayer1 = "0";
                 pointPlayer2 = "0";
@@ -196,7 +194,7 @@ public class TennisMatch {
                 pointPlayer1 = "0";
                 pointPlayer2 = "0";
                 gamePlayer2++;
-                if(gamePlayer2 == gamePlayer1 && gamePlayer2 == 6 && isTieBreakInLastSet() && isLastSet){
+                if(gamePlayer1 == gamePlayer2 && gamePlayer1 == 6 && ((isTieBreakInLastSet() && isLastSet) || (!isLastSet))){
                     isATieBreak = true;
                 }
             }
@@ -204,7 +202,6 @@ public class TennisMatch {
     }
 
     private void addSet(Player player) {
-
         if(setPlayer1 == matchType.numberOfSetsToWin() -1 && setPlayer1 == setPlayer2){
             isLastSet = true;
         }
