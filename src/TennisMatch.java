@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class TennisMatch {
 
@@ -17,10 +18,31 @@ public class TennisMatch {
     boolean isLastSet;
     boolean finish;
     boolean tieBreakInLastSet;
-    ArrayList<ArrayList> score;
+    //int score[][];
+    HashMap<Player, Integer[]> score;
 
 
 
+    public void setPointsPlayers(String pointsP1, String pointsP2){
+        pointPlayer1 = pointsP1;
+        pointPlayer2 = pointsP2;
+    }
+    public void setSetsPlayers(int setP1, int setP2){
+        setPlayer1 = setP1;
+        setPlayer2 = setP2;
+    }
+    public void setGamesPlayers(int gamesP1, int gamesP2){
+        gamePlayer1 = gamesP1;
+        gamePlayer2 = gamesP2;
+    }
+
+    public String getFinalScore(){
+            String scoreSTR = "Le score est de ";
+            for (int i = 0; i <= currentSetNumber(); i++) {
+                scoreSTR = scoreSTR.concat(String.valueOf(score.get(player1)[i])).concat("-").concat(String.valueOf(score.get(player2)[i]).concat(","));
+            }
+        return scoreSTR;
+    }
     public MatchType getMatchType() {
         return matchType;
     }
@@ -62,7 +84,13 @@ public class TennisMatch {
         finish = false;
         pointTieBreakP1 = 0;
         pointTieBreakP2 = 0;
-
+        score = new HashMap<Player, Integer[]>();
+        score.put(player1, new Integer[(matchType.numberOfSetsToWin()*2)-1]);
+        score.put(player2, new Integer[(matchType.numberOfSetsToWin()*2)-1]);
+        for(int i=0; i<matchType.numberOfSetsToWin()*2-1; i++){
+            score.get(player1)[i] = 0;
+            score.get(player2)[i] = 0;
+        }
     }
 
 
@@ -90,10 +118,12 @@ public class TennisMatch {
     }
 
     public int gamesInSetForPlayer(int setNumber, Player player) {
-        return 1;
+        return score.get(player)[setNumber-1];
     }
 
     public boolean isFinished() {
+        if(setPlayer1 == matchType.numberOfSetsToWin()||setPlayer2 == matchType.numberOfSetsToWin())
+            finish =true;
         return finish;
     }
 
@@ -170,8 +200,14 @@ public class TennisMatch {
     }
 
     private void addGame(Player player){
-        isATieBreak = false;
+        if(isATieBreak){
+            addSet(player);
+            isATieBreak = false;
+            return;
+        }
+
         if(player == player1){
+            score.get(player1)[currentSetNumber()]++;
             if(gamePlayer1 >= 5 && gamePlayer1 >= gamePlayer2+2){
                 addSet(player);
                 pointPlayer1 = "0";
@@ -187,6 +223,7 @@ public class TennisMatch {
             }
         }
         else{
+            score.get(player2)[currentSetNumber()]++;
             if(gamePlayer2 >= 5 && gamePlayer2 >= gamePlayer1 +2){
                 addSet(player);
             }
@@ -202,25 +239,30 @@ public class TennisMatch {
     }
 
     private void addSet(Player player) {
-        if(setPlayer1 == matchType.numberOfSetsToWin() -1 && setPlayer1 == setPlayer2){
-            isLastSet = true;
-        }
+
         if(player == player1){
-            if(setPlayer1 +1 == matchType.numberOfSetsToWin()){
+            setPlayer1++;
+            if(setPlayer1 == matchType.numberOfSetsToWin() -1 && setPlayer1 == setPlayer2){
+                isLastSet = true;
+            }
+            if(setPlayer1 == matchType.numberOfSetsToWin()){
                 finish = true;
             }
             else {
-                setPlayer1++;
+
                 gamePlayer2 = 0;
                 gamePlayer1 = 0;
             }
         }
         else {
+            setPlayer2++;
+            if(setPlayer1 == matchType.numberOfSetsToWin() -1 && setPlayer1 == setPlayer2){
+                isLastSet = true;
+            }
             if(setPlayer2 +1 == matchType.numberOfSetsToWin()){
                 finish = true;
             }
             else {
-                setPlayer2++;
                 gamePlayer2 = 0;
                 gamePlayer1 = 0;
             }

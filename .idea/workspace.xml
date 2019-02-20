@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="578f488a-d560-4694-bce1-539e87023e11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TennisMatch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TennisMatch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/TennisMatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/TennisMatchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TennisMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TennisMatch.java" afterDir="false" />
     </list>
@@ -29,11 +27,49 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TennisMatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="316">
+              <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
               <folding>
-                <element signature="e#2086#2087#0" expanded="true" />
-                <element signature="e#2148#2149#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#setPointsPlayers#0;class#TennisMatch#0" />
+                <element signature="method#setPointsPlayers#1;class#TennisMatch#0" />
+                <element signature="method#setPointsPlayers#2;class#TennisMatch#0" />
+                <element signature="method#getFinalScore#0;class#TennisMatch#0" />
+                <element signature="e#1025#1058#1" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1101#1142#1" />
+                <element signature="e#1371#1372#0" expanded="true" />
+                <element signature="e#1180#1216#1" />
+                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="e#1254#1290#1" />
+                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#1324#1359#1" />
+                <element signature="e#1588#1589#0" expanded="true" />
+                <element signature="e#1393#1428#1" />
+                <element signature="e#1657#1658#0" expanded="true" />
+                <element signature="method#TennisMatch#0;class#TennisMatch#0" />
+                <element signature="method#pointsForPlayer#0;class#TennisMatch#0" />
+                <element signature="e#1786#1833#1" />
+                <element signature="e#2922#2923#0" expanded="true" />
+                <element signature="method#gamesInCurrentSetForPlayer#0;class#TennisMatch#0" />
+                <element signature="e#3181#3182#0" expanded="true" />
+                <element signature="e#3232#3233#0" expanded="true" />
+                <element signature="method#updateWithPointWonBy#0;class#TennisMatch#0" />
+                <element signature="method#addGame#0;class#TennisMatch#0" />
+                <element signature="method#addSet#0;class#TennisMatch#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MatchType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+              <folding>
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +78,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/TennisMatchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="2142">
+              <caret line="209" selection-start-line="209" selection-end-line="209" />
+              <folding>
+                <element signature="method#updateWithPointWonBy#0;class#TennisMatchTest#0" />
+                <element signature="method#updateWithPointWonByAdventage#0;class#TennisMatchTest#0" />
+                <element signature="method#addGame#0;class#TennisMatchTest#0" />
+                <element signature="method#addGame#1;class#TennisMatchTest#0" />
+                <element signature="method#pointsForPlayer#1;class#TennisMatchTest#0" />
+                <element signature="method#currentSetNumber#0;class#TennisMatchTest#0" />
+                <element signature="method#gamesInCurrentSetForPlayer#0;class#TennisMatchTest#0" />
+                <element signature="method#gamesInSetForPlayer#0;class#TennisMatchTest#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,6 +100,8 @@
     <findStrings>
       <find>Set</find>
       <find>set</find>
+      <find>isF</find>
+      <find>isLa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,7 +155,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550612902369" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550699931085" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -122,22 +170,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TennisMatchTest.updateWithPointWonByAdventage">
-    <configuration name="TennisMatchTest.updateWithPointWonBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TennisMatchTest.TieBreakInLastSet">
+    <configuration name="TennisMatchTest.TieBreakInLastSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TennisMatch" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TennisMatchTest" />
-      <option name="METHOD_NAME" value="updateWithPointWonBy" />
+      <option name="METHOD_NAME" value="TieBreakInLastSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TennisMatchTest.updateWithPointWonByAdventage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TennisMatchTest.isFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TennisMatch" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TennisMatchTest" />
-      <option name="METHOD_NAME" value="updateWithPointWonByAdventage" />
+      <option name="METHOD_NAME" value="isFinished" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TennisMatchTest.showFinalScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisMatch" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TennisMatchTest" />
+      <option name="METHOD_NAME" value="showFinalScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TennisMatchTest.tieBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisMatch" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TennisMatchTest" />
+      <option name="METHOD_NAME" value="tieBreak" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TennisMatchTest.tieBreakInLastSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TennisMatch" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TennisMatchTest" />
+      <option name="METHOD_NAME" value="tieBreakInLastSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,8 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TennisMatchTest.updateWithPointWonByAdventage" />
-        <item itemvalue="JUnit.TennisMatchTest.updateWithPointWonBy" />
+        <item itemvalue="JUnit.TennisMatchTest.TieBreakInLastSet" />
+        <item itemvalue="JUnit.TennisMatchTest.tieBreakInLastSet" />
+        <item itemvalue="JUnit.TennisMatchTest.tieBreak" />
+        <item itemvalue="JUnit.TennisMatchTest.isFinished" />
+        <item itemvalue="JUnit.TennisMatchTest.showFinalScore" />
       </list>
     </recent_temporary>
   </component>
@@ -164,44 +245,68 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisMatchTest_updateWithPointWonBy - 2019.02.19 at 21h 30m 51s.xml">
-      <configuration name="TennisMatchTest.updateWithPointWonBy" configurationId="JUnit" />
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 51m 56s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisMatchTest_updateWithPointWonBy - 2019.02.19 at 21h 32m 05s.xml">
-      <configuration name="TennisMatchTest.updateWithPointWonBy" configurationId="JUnit" />
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 51m 58s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisMatchTest_updateWithPointWonBy - 2019.02.19 at 21h 33m 38s.xml">
-      <configuration name="TennisMatchTest.updateWithPointWonBy" configurationId="JUnit" />
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 53m 30s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisMatchTest_updateWithPointWonBy - 2019.02.19 at 21h 33m 57s.xml">
-      <configuration name="TennisMatchTest.updateWithPointWonBy" configurationId="JUnit" />
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 54m 15s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisMatchTest_updateWithPointWonByAdventage - 2019.02.19 at 21h 43m 46s.xml">
-      <configuration name="TennisMatchTest.updateWithPointWonByAdventage" configurationId="JUnit" />
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 55m 48s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 55m 51s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 56m 33s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 57m 21s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisMatchTest_tieBreakInLastSet - 2019.02.20 at 22h 57m 22s.xml">
+      <configuration name="TennisMatchTest.tieBreakInLastSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisMatchTest_TieBreakInLastSet - 2019.02.20 at 22h 58m 52s.xml">
+      <configuration name="TennisMatchTest.TieBreakInLastSet" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27986577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28389263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -212,11 +317,57 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tests/TennisMatchTest.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="match" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>setPlayer1 == matchType.numberOfSetsToWin() -1 &amp;&amp; setPlayer1 == setPlayer2</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matchType.numberOfSetsToWin()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currentSetNumber()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tests/TennisMatchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="2142">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
+          <folding>
+            <element signature="method#updateWithPointWonBy#0;class#TennisMatchTest#0" />
+            <element signature="method#updateWithPointWonByAdventage#0;class#TennisMatchTest#0" />
+            <element signature="method#addGame#0;class#TennisMatchTest#0" />
+            <element signature="method#addGame#1;class#TennisMatchTest#0" />
+            <element signature="method#pointsForPlayer#1;class#TennisMatchTest#0" />
+            <element signature="method#currentSetNumber#0;class#TennisMatchTest#0" />
+            <element signature="method#gamesInCurrentSetForPlayer#0;class#TennisMatchTest#0" />
+            <element signature="method#gamesInSetForPlayer#0;class#TennisMatchTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -227,13 +378,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MatchType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TennisMatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="316">
+          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
           <folding>
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#setPointsPlayers#0;class#TennisMatch#0" />
+            <element signature="method#setPointsPlayers#1;class#TennisMatch#0" />
+            <element signature="method#setPointsPlayers#2;class#TennisMatch#0" />
+            <element signature="method#getFinalScore#0;class#TennisMatch#0" />
+            <element signature="e#1025#1058#1" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1101#1142#1" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1180#1216#1" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1254#1290#1" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1324#1359#1" />
+            <element signature="e#1588#1589#0" expanded="true" />
+            <element signature="e#1393#1428#1" />
+            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="method#TennisMatch#0;class#TennisMatch#0" />
+            <element signature="method#pointsForPlayer#0;class#TennisMatch#0" />
+            <element signature="e#1786#1833#1" />
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="method#gamesInCurrentSetForPlayer#0;class#TennisMatch#0" />
+            <element signature="e#3181#3182#0" expanded="true" />
+            <element signature="e#3232#3233#0" expanded="true" />
+            <element signature="method#updateWithPointWonBy#0;class#TennisMatch#0" />
+            <element signature="method#addGame#0;class#TennisMatch#0" />
+            <element signature="method#addSet#0;class#TennisMatch#0" />
           </folding>
         </state>
       </provider>
